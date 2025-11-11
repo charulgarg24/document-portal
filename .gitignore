@@ -1,0 +1,8 @@
+envcharul
+.env
+venv/
+__pycache__/
+logs/
+*.pyc
+document_portal.egg-info
+test.py 

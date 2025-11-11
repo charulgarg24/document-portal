@@ -1,0 +1,33 @@
+
+# inside the yaml file file we are going to write public configurations
+
+# difference between json and yaml
+
+# JSON: Strict, machine-friendly, uses {} and [], supports only basic data types.
+
+# YAML: Human-friendly, uses indentation, allows comments, supports complex data structures.
+
+
+faiss_db:
+  collection_name: "document_portal"
+
+
+embedding_model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+retriever:
+  top_k: 10
+
+llm:
+  groq:
+    provider: "groq"
+    model_name: "deepseek-r1-distill-llama-70b"
+    temperature: 0
+    max_output_tokens: 2048
+
+  google:
+    provider: "google"
+    model_name: "gemini-2.0-flash"
+    temperature: 0
+    max_output_tokens: 2048
